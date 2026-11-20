@@ -12,6 +12,19 @@
 
 > 本项目**没有集成 edge-tts**。edge-tts 使用微软未公开的 Edge「大声朗读」接口，且项目为 GPLv3；在开源项目中内置会带来微软服务条款与许可证风险。DeepSeek 使用的是官方公开 API，需用户自行提供 Key 并遵守 DeepSeek 的服务条款。
 
+## 下载安装包
+
+推荐从 GitHub Releases 下载：
+
+**https://github.com/lcyaimer/RYJS-TTS/releases**
+
+如果 GitHub 下载速度较慢，可以使用网盘下载（文件由维护者同步；如网盘链接失效或内容未更新，请以 Releases 为准）：
+
+- **夸克网盘**：<https://pan.quark.cn/s/301800ecba9f?pwd=xtDc>　提取码：`xtDc`
+- **百度网盘**：<https://pan.baidu.com/s/10HYjUcGmyk19HYcu8kqW1w?pwd=usmz>　提取码：`usmz`
+
+下载后建议使用 Release 页面提供的 SHA-256 校验安装包。当前安装包未配置代码签名，Windows SmartScreen 或 macOS Gatekeeper 可能提示。
+
 ## 功能
 
 - **更多音色**：Kokoro 内置小北、小妮、小晓、小艺、云健、云希、云夏、云扬；Piper 提供超文；Windows 本地语音可使用慧慧、瑶瑶、康康；DeepSeek 提供海星、暗潮。
