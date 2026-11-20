@@ -1,0 +1,61 @@
+{
+  "name": "ryjs-tts",
+  "version": "1.3.0",
+  "description": "RyJS TTS - 本地优先的文字转语音工作台",
+  "main": "./out/main/index.js",
+  "author": "RyJS",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "node scripts/launch.mjs dev",
+    "start": "node scripts/launch.mjs preview",
+    "build": "electron-vite build",
+    "test:core": "node scripts/test-core.mjs",
+    "dist": "electron-vite build && electron-builder",
+    "dist:win": "electron-vite build && electron-builder --win --x64",
+    "dist:mac": "electron-vite build && electron-builder --mac",
+    "dist:mac:x64": "electron-vite build && electron-builder --mac --x64",
+    "dist:mac:arm64": "electron-vite build && electron-builder --mac --arm64",
+    "pack:dir": "electron-vite build && electron-builder --dir",
+    "test:deepseek": "node scripts/test-deepseek.mjs"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "element-plus": "^2.14.8",
+    "sherpa-onnx-node": "2.0.2",
+    "tar": "7.5.23",
+    "unbzip2-stream": "1.4.3",
+    "vue": "^3.5.45"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-vue": "^6.0.11",
+    "electron": "45.2.3",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcyaimer/RYJS-TTS.git"
+  },
+  "homepage": "https://github.com/lcyaimer/RYJS-TTS#readme",
+  "bugs": {
+    "url": "https://github.com/lcyaimer/RYJS-TTS/issues"
+  },
+  "keywords": [
+    "tts",
+    "text-to-speech",
+    "electron",
+    "vue",
+    "kokoro",
+    "piper",
+    "deepseek"
+  ]
+}

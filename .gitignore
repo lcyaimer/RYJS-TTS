@@ -1,0 +1,14 @@
+node_modules/
+out/
+dist/
+.vite/
+.tmp-test/
+.tmp-neural/
+.tmp-sherpa/
+.screenshots/
+*.log
+.DS_Store
+Thumbs.db
+.tmp-ai/
+.tmp-e2e/
+.claude/
